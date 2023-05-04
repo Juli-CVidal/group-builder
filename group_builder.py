@@ -54,7 +54,7 @@ OPTIONS = ["Separar por cantidad de integrantes",
 
 try:
     with open("names.txt", "r") as reader:
-        names = reader.read().splitlines()
+        names = list(set(reader.read().splitlines())) #in this way, I ensure to delete all repeated names
 except FileNotFoundError:
     print("No se pudo encontrar el archivo 'names.txt'")
 except Exception as e:
