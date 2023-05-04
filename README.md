@@ -7,4 +7,4 @@ The user can select:
 * The number of groups
 
 ### Preview: 
-<img src="preview.mp4"/>
+<img src="preview.gif"/>
