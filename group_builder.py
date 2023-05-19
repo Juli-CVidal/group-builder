@@ -28,7 +28,7 @@ def ask_option(options: list) -> int:
 
 
 def get_group_size(option: int, total_members: int) -> int:
-    print("Cuántos integrantes deben ir por groupo? " if option == 0 else "Cuántos grupos quiere? ")
+    print("Cuántos integrantes deben ir por grupo? " if option == 0 else "Cuántos grupos quiere? ")
     group_size = ask_value_in_range(1,total_members)
     return group_size if option == 0 else math.ceil(total_members / group_size)
    
